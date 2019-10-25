@@ -1,0 +1,378 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+button {
+	border: none;
+	width: 512px;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #DB4E08;
+	color: #FFF07C;
+	padding: 16px;
+	border-radius: 32px;
+}
+
+button span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+button:hover span {
+  	padding-right: 25px;
+}
+
+button:hover span:after {
+  	opacity: 1;
+  	right: 0;
+}
+
+#header {
+  	background-image: url("background.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	position: fixed;
+	padding-left: 128px;
+ 	padding-right: 128px;
+ 	padding-top: 16px;
+ 	box-shadow: 0px 2px 2px #000;
+ 	z-index: 99;
+}
+
+.donation {
+	position: absolute;
+	top: 32px;
+	right: 342px;
+}
+
+.donation a {
+	width: 128px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #DB4E08;
+	color: #FFF07C;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 32px;
+}
+
+.donation a span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.donation a span:after {
+  	content: '\00bb';
+ 	position: absolute;
+  	opacity: 0;
+  	top: 0;
+  	right: -20px;
+  	transition: 0.5s;
+}
+
+.donation a:hover span {
+  	padding-right: 25px;
+}
+
+.donation a:hover span:after {
+  	opacity: 1;
+  	right: 0;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	width: 300px;
+}
+
+.nav {
+	display: flex;
+	float: right;
+	padding-top: 68px;
+	padding-bottom: 16px;
+}
+
+.nav a {
+ 	text-decoration: none;
+ 	background-color: #ABA9C3;
+ 	color: #43438B;
+ 	padding-left: 16px;
+ 	padding-right: 16px;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	border-right: solid 2px #FFF07C;
+}
+
+.nav a:last-child {
+	border-right: none !important;
+}
+
+.nav a:after {
+	display: block;
+  	content: '';
+  	border-bottom: solid 3px #FFF07C;  
+  	transform: scaleX(0);  
+  	transition: transform 250ms ease-in-out;
+}
+
+.nav a:hover:after {
+	transform: scaleX(1);
+}
+
+.nav a.fromRight:after {
+	transform-origin:100% 50%;
+}
+
+.nav a.fromLeft:after {
+	transform-origin:  0% 50%;
+}
+
+#main {
+	position: absolute;
+	padding-top: 156px;
+	left: 0;
+	right: 0;
+}
+
+#container {
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+.section_1 {
+	position: relative;
+  	text-align: center;
+	padding-right: 128px;
+	padding-left: 128px;
+	color: #FFF07C;
+	text-align: left;
+}
+
+.section_1 img {
+	position: relative;
+	width: 100%;
+}
+
+.section_1_text {
+  	position: absolute;
+  	top: 50%;
+  	left: 35%;
+  	transform: translate(-50%, -50%);
+}
+
+.section_1_text h1 {
+  	font-size: 44px;
+}
+
+.section_1_text p {
+  	font-size: 28px;
+}
+
+.section_1_block {
+  	position: absolute;
+  	bottom: 0px;
+  	right: 128px;
+  	background-color: #43438B;
+  	color: #FFF07C;
+  	padding-left: 16px;
+  	padding-right: 16px;
+  	font-size: 28px;
+  	text-align: right;
+  	text-transform: uppercase;
+}
+
+.section_2 {
+	position: relative;
+	background-color: #ABA9C3;
+	border-top: solid 1px #888;
+	border-bottom: solid 1px #888;
+	left: 0;
+	right: 0;
+	padding-left: 128px;
+	padding-right: 128px;
+	padding-top: 32px;
+	padding-bottom: 128px;
+}
+
+.section_2_block {
+	background-color: #43438B;
+	padding-left: 64px;
+	padding-top: 32px;
+	padding-bottom: 128px;
+	margin-top: 128px;
+	width: 44%;
+	height: 700px;
+}
+
+.section_2_block h1 {
+	font-size: 146px;
+	text-align: left; 
+	color: #FFF07C;
+	text-transform: uppercase;
+	white-space: nowrap;
+	line-height: 10px;
+}
+
+.section_2_block p {
+	font-size: 28px;
+	text-align: left; 
+	color: #FFF07C;
+	width: 70%;
+}
+
+.section_2 img {
+	position: absolute;
+	top: 400px;
+	right: 128px;
+	width: 49vw;
+}
+
+.section_3_button span:after {
+  	content: '\00bb';
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-o-transform: rotate(90deg);
+  	-ms-transform: rotate(90deg);
+  	transform: rotate(90deg);
+ 	position: absolute;
+  	opacity: 0;
+  	top: 0;
+  	right: -20px;
+  	transition: 0.5s;
+}
+
+.section_3 {
+	text-align: center;
+}
+
+..section_3_block {
+	transition: .5s ease-in-out;
+}
+
+.section_3_block img {
+	margin-top: 32px;
+}
+
+.section_4 {
+	position: relative;
+	background-image: url("map.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	left: 0;
+	right: 0;
+	padding-right: 128px;
+	padding-top: 32px;
+	padding-bottom: 128px;
+}
+
+.section_4_text {
+	background-color: #FFF07C;
+	padding-top: 32px;
+	padding-bottom: 128px;
+	margin-top: 128px;
+	width: 30%;
+	height: 768px;
+	text-align: left; 
+	color: #DB4E08;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.section_4_text span {
+	margin-left: 128px;
+	font-weight: bold;
+	line-height: 88px;
+}
+
+.section_4_text_1 {
+	font-size: 72px;
+}
+
+.section_4_text_2 {
+	font-size: 96px;
+}
+
+.section_4_text_3 {
+	font-size: 72px;
+}
+
+.section_4_block {
+	position: absolute;
+	bottom: 256px;
+	left: 20%;
+}
+
+.section_4_button {
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #DB4E08;
+	color: #FFF07C;
+	padding: 16px;
+	border-radius: 32px;
+}
+
+.section_4_button span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.section_4_button span:after {
+  	content: '\00bb';
+ 	position: absolute;
+  	opacity: 0;
+  	top: 0;
+  	right: -20px;
+  	transition: 0.5s;
+}
+
+.section_4_button:hover span {
+  	padding-right: 25px;
+}
+
+.section_4_button:hover span:after {
+  	opacity: 1;
+  	right: 0;
+}
+
+.section_5 {
+	position: relative;
+	background-color: #ABA9C3;
+	border-top: solid 1px #888;
+	border-bottom: solid 1px #888;
+	left: 0;
+	right: 0;
+	padding-left: 128px;
+	padding-right: 128px;
+	padding-top: 32px;
+	padding-bottom: 128px;
+}
+
+.section_5_text {
+	background-image: url("bg.png");
+}
