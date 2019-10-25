@@ -1,0 +1,165 @@
+.footer {
+	font-family: 'Raleway', sans-serif;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #04348B;
+}
+
+.logo {
+	height: 110px;
+	padding: 25px;
+	margin-left: 144px;
+}
+
+.nous_trouver {
+	color: #ABA9C3;
+	position: absolute;
+	left: 330px;
+	top: 15px;
+	font-weight: 900;
+	font-size: 14px;
+}
+
+.bio1{
+	color:white;
+	position:absolute;
+	left : 330px;
+	top: 108px;
+	font-size: 9px;
+
+}
+
+.bio2{
+	color:white;
+	position:absolute;
+	left : 330px;
+	top: 125px;
+	font-size: 7px;
+
+}
+
+.svg-container {
+	position:absolute;
+	left : 320px;
+	top: 65px;
+	display: flex; 
+}
+
+.svg-container svg {
+	height: 35px;
+	fill: #FFF07C;
+	margin: 0 10px;
+}
+
+.table {
+	position:absolute;
+	left : 635px;
+	top: 18px;
+	font-weight: 500;
+	font-size: 11px;
+	color: #04348B;
+	text-align: center;
+}
+
+.nous {
+	padding: 3px;
+	background-color: #FFF07C;
+
+}
+
+.agir {
+	padding: 3px;
+	background-color: #FFF07C;
+}
+
+.action {
+	padding: 3px;
+	background-color: #FFF07C;
+}
+
+.contact {
+	padding: 3px;
+	background-color: #FFF07C;
+}
+
+.followcloche {
+	position: absolute;
+	left: 800px;
+	top:18px;
+	font-weight: 500;
+	font-size:11px;
+	color: white;
+	text-align : center;
+
+}
+
+.lacloche {
+	height: 80px;
+}
+
+.margedroite{
+right:144px;
+}
+
+.newsletter{
+	position:absolute;
+	left : 1050px;
+	top: 40px;
+	font-weight: 900;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+.newslettertext{
+	background-color: #ABA9C3;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.nous:hover {
+	background: #ABA9C3;
+	cursor: pointer;
+	color: #FFF07C;
+	transition: 2sec;
+
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+}
+
+.space{
+	margin-top: 10px;
+}
+
+.action:hover {
+	background: #ABA9C3;
+	cursor: pointer;
+	color: #FFF07C;
+	transition: 2sec;
+}
+
+.agir:hover {
+	background: #ABA9C3;
+	cursor: pointer;
+	color: #FFF07C;
+	transition: 2sec;
+}
+.contact:hover {
+	background: #ABA9C3;
+	cursor: pointer;
+	color: #FFF07C;
+	transition: 2sec;
+}
+
+.newsletter:hover {
+	cursor: pointer;
+	color: #04348B;
+	transition: 2sec;
+}
